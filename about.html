@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>The Trocadero Theatre</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="css/styleNoJS.css"/>
+<link rel="stylesheet" type="text/css" href="css/demo.css" />
+<link rel="stylesheet" type="text/css" href="css/custom.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/global.css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/instafeed.min.js"></script>
+
+<script type="text/javascript">
+var feed = new Instafeed({
+  get: 'tagged',
+  tagName: 'trocaderotheatre',
+  clientId: 'c74fb6bad1b143dcaf11eacab23bd071',
+  accessToken: '837123465.467ede5.0cd173cc0c1f47fd9d42b18f8514df5a',
+  resolution: 'standard_resolution',
+  success: function(response){
+    for(var c = 0; c < response.data.length; c++) {
+      var image = response.data[c].images.standard_resolution.url,
+      thumb = response.data[c].images.thumbnail.url,
+      id =  response.data[c].id,
+      li = '<img class="'+id+' fullsize" src="'+image+'" />',
+      thumbLi = '<li><img id="'+id+'" class="thumbnail" src="'+thumb+'" /></li>';
+      $('.thumb-gallery').append(thumbLi);
+
+
+
+
+
+
+
+    }
+  }
+});
+feed.run();
+
+
+</script>
+
+<noscript>
+<link rel="stylesheet" type="text/css" href="css/styleNoJS.css" />
+</noscript>
+</head><body>
+<div class="container demo-2"style="
+    z-index:  2;
+">
+  <header> <a href="#"><img src="images/logo.png" style="
+    margin: 0 auto;
+    display:  block;
+" class="img-responsive"></a>
+    <nav class="codrops-demos"> <a href="events.html">Events</a> <a class="current-demo" href="about.html">About</a> <a class="current-demo" href="booking.html">Booking</a> <a class="current-demo" href="contact.html">Contact</a> </nav>
+  </header>
+
+    <!-- /sl-slider -->
+
+
+  </div>
+  <!-- /slider-wrapper -->
+
+  <div class="container main">
+    <a href="#"><img src="images/about-img.jpg" class="img-responsive"></a>
+    <h2 class="col-md-9">The Trocadero Theatre</h2>
+
+      <div class="col-md-9 paragraph">
+      <p>The Trocadero Theatre was first opened in 1870, offering musical comedies and traveling minstrel shows under the name Arch Street Opera House. Later, vaudeville and burlesque came to its stage with notable professional showgirls performing burlesque during the 1950’s. The Theatre was refurbished in the late 1970’s for use as an art house cinema and fine arts theatre. In the 1980’s, the Theatre was remodeled as a dance club and finally for its current use as a concert hall and live music venue.</p>
+      <p>Although the Theatre has undergone many notable changes, the utmost care has been taken to upkeep and modernize the facility while retaining its historical character. The Trocadero is the only 19th century Victorian theater still in operation in the United States. It is listed on the U.S. Register of Historic Places.</p>
+    </div>
+    <div class="clear"></div>
+
+    <div class="thumb-gallery"></div>
+  </div>
+
+
+  <footer class="container" style="
+    background-color: #444444;
+    padding: 20px;
+    margin-top: 80px;
+">
+    <div class="col-md-3">
+      <ul>
+        <a href="#">
+        <li class="white">Home</li>
+        </a> <a href="#">
+        <li class="white">Events</li>
+        </a> <a href="#">
+        <li class="white">About</li>
+        </a> <a href="#">
+        <li class="white">Booking</li>
+        </a> <a href="#">
+        <li class="white">Contact</li>
+        </a>
+      </ul>
+    </div>
+    <div class="col-md-3">
+      <p class="white">Trocadero Theatre <br>
+        1003 Arch Street <br>
+        Philadelphia PA 19107 <br>
+        P. 215 922 6888</p>
+    </div>
+    <div class="col-md-6">
+      <ul class="social">
+        <a href="#">
+        <li><img src="images/facebook_10.png" class="img-responsive"></li>
+        </a> <a href="#">
+        <li><img src="images/twitter_03.png" class="img-responsive"></li>
+        </a> <a href="#">
+        <li><img src="images/instagram_05.png" class="img-responsive"></li>
+        </a> <a href="#">
+        <li><img src="images/sound-cloud_07.png" class="img-responsive"></li>
+        </a>
+      </ul>
+      <a href="#"><img src="images/logo-small_17.png" class="right img-responsive"></a>
+      <p class="white right">Designed by Brianna Casuccio</p>
+    </div>
+  </footer>
+</div>
+
+
+</body>
+</html>

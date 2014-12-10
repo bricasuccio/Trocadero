@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>The Trocadero Theatre</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="css/styleNoJS.css"/>
+<link rel="stylesheet" type="text/css" href="css/demo.css" />
+<link rel="stylesheet" type="text/css" href="css/custom.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/global.css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/instafeed.min.js"></script>
+<script type="text/javascript" src="js/contact.js"></script>
+
+<script type="text/javascript">
+var feed = new Instafeed({
+  get: 'tagged',
+  tagName: 'trocaderotheatre',
+  clientId: 'c74fb6bad1b143dcaf11eacab23bd071',
+  accessToken: '837123465.467ede5.0cd173cc0c1f47fd9d42b18f8514df5a',
+  resolution: 'standard_resolution',
+  success: function(response){
+    for(var c = 0; c < response.data.length; c++) {
+      var image = response.data[c].images.standard_resolution.url,
+      thumb = response.data[c].images.thumbnail.url,
+      id =  response.data[c].id,
+      li = '<img class="'+id+' fullsize" src="'+image+'" />',
+      thumbLi = '<li><img id="'+id+'" class="thumbnail" src="'+thumb+'" /></li>';
+      $('.thumb-gallery').append(thumbLi);
+
+
+
+
+
+
+
+    }
+  }
+});
+feed.run();
+
+
+</script>
+
+<noscript>
+<link rel="stylesheet" type="text/css" href="css/styleNoJS.css" />
+</noscript>
+</head><body>
+<div class="container demo-2"style="
+    z-index:  2;
+">
+  <header> <a href="index.html"><img src="images/logo.png" style="
+    margin: 0 auto;
+    display:  block;
+" class="img-responsive"></a>
+    <nav class="codrops-demos"> <a href="events.html">Events</a> <a class="current-demo" href="about.html">About</a> <a class="current-demo" href="booking.html">Booking</a> <a class="current-demo" href="contact.html">Contact</a> </nav>
+  </header>
+
+    <!-- /sl-slider -->
+
+
+  </div>
+  <!-- /slider-wrapper -->
+
+  <div class="container main">
+  
+    <a href="#"><img src="images/concert1.jpg" class="img-responsive"></a>
+    <div class="col-md-6">
+    <h2 class="col-md-9">Booking</h2>
+
+      <div class="col-md-9 paragraph">
+      <h3>Trocadero Main Stage Capacity</h3>
+      <p>1,200 people (General Admission) <br> 600 people (Seated Event)</p>
+      <h3>The Balcony Capacity</h3>
+      <p>250 Capacity</p>
+      <h3>Band</h3>
+      <p>If you are interested in performing at the Trocadero, please include the following information in an email to trocadero@thetroc.com: or fill out the form included.</p> <p>1) band name<br>
+2) brief description including if & what other venues/bars in the Philly area you have played <br>
+3) band website <br>
+4) contact info <br>
+5) availability. <br> </p>
+<p>If you are interested in promoting a concert or hosting your special event at the Trocadero please contact us through email at trocadero@thetroc.com.</p>
+    </div>
+    </div>
+
+   <div class="flip-container col-md-6" ontouchstart="this.classList.toggle('hover');">
+      <div class="flipper">
+        <div class="front">
+          <div class="name form-group">
+            <input class="form" type="text" data-error-message="Please enter a band name" data-validate="not-blank" placeholder="Band Name" id="name" max-length="50" />
+
+          </div>
+          <div class="form-group">
+
+            <textarea class="message" cols="15" rows="8" maxlength="150" data-error-message="Please enter an message" id="message" type="text" data-validate="not-blank" placeholder="Previous Venues Played at"></textarea>
+          </div>
+           <div id="count"></div>
+          <div class="email-address form-group">
+            <input class="form" data-error-message="Please enter an email address" id="emailbox" type="text" data-validate="email" placeholder="Email Address" />
+          </div>
+         
+          
+          <div class="name form-group">
+            <input class="form" type="text" data-error-message="Please enter contact info" data-validate="not-blank" placeholder="Contact Info" id="name" max-length="50" />
+
+          </div><div class="name form-group">
+            <input class="form" type="text" data-error-message="Please enter Availability" data-validate="not-blank" placeholder="Availability" id="name" max-length="50" />
+
+          </div>
+
+          <button class="submit button" type="button" value="Submit" onclick="document.querySelector('#flip-toggle').classList.toggle('hover');">Submit</button>
+          <div>
+            <ul class="form-errors"></ul>
+          </div>
+        </div>
+        <div class="back"><p>Hello <span class="name"></span>!
+          <br>
+    
+          Thanks for contacting us, we will respond promptly to your e-mail, <span class="email"></span>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  </div>
+
+
+  <footer class="container" style="
+    background-color: #444444;
+    padding: 20px;
+    margin-top: 80px;
+">
+    <div class="col-md-3">
+      <ul>
+        <a href="#">
+        <li class="white">Home</li>
+        </a> <a href="#">
+        <li class="white">Events</li>
+        </a> <a href="#">
+        <li class="white">About</li>
+        </a> <a href="#">
+        <li class="white">Booking</li>
+        </a> <a href="#">
+        <li class="white">Contact</li>
+        </a>
+      </ul>
+    </div>
+    <div class="col-md-3">
+      <p class="white">Trocadero Theatre <br>
+        1003 Arch Street <br>
+        Philadelphia PA 19107 <br>
+        P. 215 922 6888</p>
+    </div>
+    <div class="col-md-6">
+      <ul class="social">
+        <a href="#">
+        <li><img src="images/facebook_10.png" class="img-responsive"></li>
+        </a> <a href="#">
+        <li><img src="images/twitter_03.png" class="img-responsive"></li>
+        </a> <a href="#">
+        <li><img src="images/instagram_05.png" class="img-responsive"></li>
+        </a> <a href="#">
+        <li><img src="images/sound-cloud_07.png" class="img-responsive"></li>
+        </a>
+      </ul>
+      <a href="#"><img src="images/logo-small_17.png" class="right img-responsive"></a>
+
+    </div>
+  </footer>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,220 @@
+@charset "UTF-8";
+/* CSS Document */
+
+footer {
+	backgrond-color: #434343;
+}
+* {
+	font-family: "Open Sans", sans-serif;
+	color: #444444;
+}
+.codrops-demos {
+	z-index: 100;
+}
+.white {
+	color: white;
+}
+ul {
+	list-style-type: none;
+}
+.social li {
+	float: right;
+	display: inline;
+	margin: 10px;
+}
+.right {
+	float: right;
+}
+p {
+	font-size: 16px;
+	font-weight: bold;
+
+}
+.main {
+
+	z-index: 1;
+	}
+h2 {
+	font-size: 30px;
+	font-weight: 700;
+ text-transform: uppercase;
+}
+.output {
+	margin-left: 20px;
+}
+.wrapper {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	border-bottom: 1px solid #444444;
+	width: 220px;
+}
+.button {
+	border: 0 none;
+	border-radius: 2px 2px 2px 2px;
+	color: #FFFFFF;
+	cursor: pointer;
+	display: inline-block;
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 20px;
+	margin-bottom: 0;
+	margin-top: 10px;
+	padding: 7px 30px;
+	text-transform: none;
+	transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
+	width: auto;
+	/* auto */
+	text-align: center;/* DELETE WHEN WIDTH AUTO */
+}
+.button.dark {
+	background: none repeat scroll 0 0 #444444;
+	color: #FFFFFF;
+}
+.button.dark:hover {
+	background: none repeat scroll 0 0 #da0f0f;
+	color: #FFFFFF;
+}
+
+@media screen and (max-width: 670px) {
+.date {
+	padding-bottom: 0px;
+	float: none;
+}
+}
+
+.col-md-4 {
+	margin-top: 50px;
+	}
+
+.col-md-9 {
+	margin: 20px 0px;
+}
+.col-md-6 {
+	margin-top: 20px;
+	}
+	
+.thumbnail{
+	float: left;
+
+}
+
+li {
+	list-style-type: none;
+}
+
+div.clear {
+	clear:both;
+}
+
+
+.date{
+	float:left;
+	margin-top: 10px;
+	margin-right:75px;
+	padding-top: 40px;
+
+}
+
+
+.artist {
+	font-size: 30px;
+font-weight: 700;
+text-transform: uppercase;
+float: left;
+padding-right: 30px;
+
+}
+
+
+.form {
+width: 300px;
+padding: 10px;
+margin: 0px;
+border-radius: 3px;
+border: 1px solid rgb(200,200,200);
+}
+
+.message {
+  width: 300px;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid rgb(200,200,200);
+}
+
+.submit {
+  border: 0 none;
+  border-radius: 2px 2px 2px 2px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial,sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 20px;
+  margin-bottom: 0;
+  margin-top: 10px;
+  padding: 7px 30px;
+  text-transform: none;
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  width: auto;
+  /* auto */
+  text-align: center;
+  /* DELETE WHEN WIDTH AUTO */
+}
+
+.form-group {
+    border-left:2px solid #FFF;
+    margin-top:5px;
+}
+.form-errors {
+    list-style:none;
+    margin-top: 20px;
+}
+.form-error {
+    border-left: 2px solid red;
+    padding-left:10px;
+    margin-top:3px;
+}
+
+/* entire container, keeps perspective */
+ .flip-container {
+    perspective: 1000;
+    padding-top: 10px;
+}
+/* flip the pane when hovered */
+ .flip-go .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}
+.flip-container, .front, .back {
+    width: 320px;
+    height: 480px;
+	margin-top: 30px;
+}
+/* flip speed goes here */
+ .flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+/* hide back of pane during swap */
+ .front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* front pane, placed above back */
+ .front {
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+}
+/* back, initially hidden pane */
+ .back {
+    transform: rotateY(180deg);
+}

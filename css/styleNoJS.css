@@ -1,0 +1,56 @@
+.sl-slider-wrapper {
+	overflow: visible !important;
+	margin: 0 auto;
+}
+/* Slide wrapper and slides */
+
+.sl-slider, .sl-slide, .sl-slides-wrapper, .sl-slide-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+
+}
+.demo-1 .sl-slide blockquote {
+	width: 50%;
+	left: 25%;
+}
+.demo-2 .bg-img {
+	padding: 0;
+	top: 0;
+	left: 0;
+}
+
+.grey {
+	color: #363636;
+}
+/*=======================
+	PROJECT SMALL
+=========================*/
+.grid li {
+	display: inline-block;
+	width: 440px;
+	margin: 0;
+	padding: 20px;
+	text-align: left;
+	position: relative;
+}
+.grid figure {
+	margin: 0;
+	position: relative;
+}
+.grid figure img {
+	max-width: 100%;
+	display: block;
+	position: relative;
+}
+figcaption {
+	display: block;
+}
+.grid {
+	padding: 20px 20px 100px 20px;
+	max-width: 1300px;
+	margin: 0 auto;
+	list-style: none;
+	text-align: center;
+	float: left;
+}
